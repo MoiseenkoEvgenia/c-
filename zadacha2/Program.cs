@@ -5,8 +5,11 @@ Console.Write("Введите второе число: ");
 int num2 = int.Parse(Console.ReadLine()!);
 int max = num1;
 int min = num2;
-if (num1 > max) max = num1; min = num2;
-if (num2 > max) max = num2; min = num1;
+if (num2 > max) 
+{
+    max = num2; 
+    min = num1;
+}
 Console.Write("max = ");
 Console.WriteLine(max);
 Console.Write("min = ");
